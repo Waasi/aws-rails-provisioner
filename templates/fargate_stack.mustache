@@ -56,7 +56,7 @@ export class {{stack_prefix}}FargateStack extends cdk.Stack {
             {{#engine_version}}
             engineVersion: '{{.}}',
             {{/engine_version}}
-            masterUser: {
+            credentials: {
                 username: username,
                 password: password
             },
